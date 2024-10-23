@@ -1,0 +1,425 @@
+/* Common CSS Start */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f2f2f2 !important;
+}
+/* Header CSS Start */
+header {
+  z-index: 999;
+}
+nav {
+  background-color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.header {
+  height: 5rem;
+}
+.logo {
+  height: 5rem;
+}
+.main-offcanvas {
+  background-color: transparent;
+  opacity: 0.9;
+  z-index: 999;
+}
+.canvas-bg-color {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 25% !important;
+}
+.canvas-cross {
+  background-color: white;
+  color: black;
+}
+.nav-ul {
+  list-style: none;
+}
+.nav-ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #a4a3a3;
+  transition: width 0.4s ease;
+}
+.nav-ul > li > a:hover {
+  color: #a4a3a3;
+}
+.nav-ul > li > a:hover::after {
+  width: 100%;
+}
+.nav-ul > li {
+  padding-bottom: 5%;
+  padding-top: 5px;
+}
+.main-offcanvas > button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+
+/* Main CSS Start */
+
+/* Hero-Section CSS Start */
+
+.hero-section {
+  height: 165vh;
+}
+
+.main-headline > p {
+  font-size: 4.5rem;
+  padding-top: 5rem;
+}
+.hero-img {
+  height: 70vh;
+  object-fit: cover;
+  /* z-index: -999; */
+}
+
+.advantages-card {
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 217px;
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+}
+.child-advantages-card {
+  background-color: #c4b35d;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  line-height: 90px;
+}
+.child-advantages-card > img {
+  object-fit: contain;
+}
+.advantages-card > h5 {
+  margin-top: 15px;
+}
+.child-advantages {
+  top: 82%;
+}
+/* Clean Energy-Section CSS Start */
+.clean-energy {
+  height: 100vh;
+  margin-top: 10%;
+}
+.clean-first {
+  width: 40%;
+  height: 60vh;
+  padding: 50px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  z-index: 1;
+  background-color: white;
+  top: 36vh;
+}
+.clean-first > h2 {
+  font-size: 49px;
+}
+.clean-first > p {
+  font-size: 18px;
+}
+.clean-btn {
+  background-color: #c4b35d;
+  width: 50%;
+  height: 55px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 55px;
+}
+.clean-btn:hover {
+  background-color: #595125;
+  transition: all 0.2s linear;
+}
+.clean-btn > a {
+  color: white;
+}
+.clean-second {
+  right: 0;
+  z-index: -1;
+  top: 10vh;
+}
+.clean-second > img {
+  width: 90%;
+  height: 80vh;
+  object-fit: cover;
+}
+.clean-third {
+  background-color: #c4b35d;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  z-index: -999;
+}
+/* ABC-Energy-Section CSS Start */
+.abc-energy {
+  height: 100vh;
+}
+.blog-card {
+  width: 27%;
+}
+.blog-card > h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+  font-size: 48px;
+}
+.blog-card > p {
+  color: grey;
+  font-size: 15px;
+}
+.blog-card > a {
+  color: black;
+  text-underline-offset: 4px;
+}
+.blog-card > a:hover {
+  color: #c4b35d;
+  transition: all 0.2s linear;
+}
+
+/* Residential-Section CSS Start */
+
+.residential {
+  background: url("../Images/Nature.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: -11;
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.603), #0000008b);
+  overflow: hidden;
+}
+.residential::before {
+  content: "";
+  background-color: #c4b35d !important;
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.093), #0000008b);
+  z-index: 999;
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  left: 50%;
+  z-index: -1;
+  animation: slideIn 2s ease;
+}
+@keyframes slideIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+.benifit-div {
+  width: 30%;
+}
+.residential-h2 > h2 {
+  font-size: 60px !important;
+}
+
+/* Solar Panel Section CSS Start  */
+
+.solar-panel {
+  height: 150vh;
+}
+.solar-panel-img > img {
+  height: 100vh;
+  object-fit: cover;
+}
+.about-solar-panel {
+  width: 40%;
+  text-align: center;
+  background-color: #c4b35d;
+  top: 75vh;
+}
+.solar-panel-btn {
+  background-color: white;
+  width: 40%;
+}
+.about-solar-panel > h2 {
+  font-size: 50px;
+}
+.about-solar-panel > p {
+  font-size: 18px;
+}
+.solar-panel-btn > a {
+  color: #c4b35d;
+}
+.solar-panel-btn:hover {
+  background-color: #595125;
+}
+
+/* About Us Section CSS Start  */
+
+.about-us {
+  height: 110vh;
+}
+.about-content {
+  width: 55%;
+}
+.child-about {
+  width: 30%;
+}
+.about-content > p {
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  height: 25vh;
+}
+.child-about > h2 {
+  font-size: 55px;
+  color: #c4b35d;
+  font-weight: bold;
+}
+.about-contect-2 {
+  width: 40%;
+  height: 100vh;
+  background-color: #c4b35d;
+}
+
+/* Team Section CSS Start */
+
+.team {
+  height: 200vh;
+}
+.parent-card {
+  background-color: #c4b35d;
+  padding-top: 5%;
+  height: 120vh;
+}
+.team-card {
+  bottom: -51%;
+}
+.team-contect > h2 {
+  font-size: 60px;
+  height: 30vh;
+}
+.team-btn {
+  width: 20%;
+  background-color: white;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+.team-btn:hover {
+  background-color: #595125;
+}
+.team-btn > a {
+  height: 55px;
+  line-height: 55px;
+  color: #c4b35d;
+}
+.team-contect > p {
+  font-size: 60px;
+  height: 50vh;
+}
+.card-1 {
+  width: 25%;
+  background-color: white;
+  height: 80vh;
+}
+.card-1 > img {
+  width: 240px;
+  height: 240px;
+}
+.team-icon {
+  width: 30px;
+}
+.card-1 > h5 {
+  color: #c4b35d;
+}
+.card-1 > p {
+  color: #a4a3a3;
+}
+
+/* About Us Section CSS Start */
+
+.contactus {
+  top: 80vh;
+}
+.contactus-1 {
+  width: 50%;
+}
+.about-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.contactus-2 > h2 {
+  font-size: 60px;
+}
+.contactus-2 {
+  width: 50%;
+}
+.form-btn {
+  background-color: #c4b35d;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+.form-btn:hover {
+  background-color: #595125;
+}
+.sub-btn {
+  color: #f2f2f2 !important;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+
+/* footer CSS Start */
+
+.footer {
+  height: 35vh;
+  background-color: #333333;
+}
+.ftr-spn {
+  color: #f2f2f2;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+.ftr-p2 {
+  color: #a4a3a3;
+}
+
+.heart {
+  font-size: 25px;
+  display: inline-block;
+  animation: flip 2s infinite ease-in-out;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+
+
+
+
+
